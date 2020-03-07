@@ -16,7 +16,7 @@ class DisplayMsgActivity : AppCompatActivity() {
 
       val message = intent.getStringExtra(EXTRA_MESSAGE)
 
-        val textView = findViewById<TextView>(R.id.textView).apply {
+       findViewById<TextView>(R.id.textView).apply {
             text = message
 
             object : CountDownTimer(10000, 1000) {
